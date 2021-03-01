@@ -1,11 +1,15 @@
 :root {
   --accent-color: #2196f3;
   --color-fonts-dark-background: #fff;
+  --color-background: #2f303a;
+  --color-link-visited: #900060;
+  --first-color-fonts: #212121;
+  --second-color-fonts: #757575;
 }
 
 body {
   font-family: 'Roboto' sans-serif;
-  color: #212121;
+  color: var(--first-color-fonts);
 }
 
 .link {
@@ -21,7 +25,7 @@ body {
 }
 
 .navigatin-link:visited {
-  color: #900060;
+  color: var(--color-link-visited);
 }
 /*-----COMPONENTS---------*/
 .hero-title {
@@ -31,7 +35,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /*color: #ffffff;*/
+  color: var(--color-fonts-dark-background);
 }
 
 .hero-button {
@@ -43,19 +47,24 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--color-fonts-dark-background);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 /*-----END COMPONENTS---------*/
 
 /*----HEADER------*/
+.hero {
+  background-color: var(--color-background);
+}
 
 .logo-webstudio {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  color: var(--first-color-fonts);
 }
 
 .logo-web {
@@ -63,7 +72,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .navigatin-link {
@@ -73,38 +82,20 @@ body {
   letter-spacing: 0.02em;
 }
 .navigatin-link:hover,
-.navigatin-link:focus {
+.mail-tel-link:hover,
+.navigatin-link:focus,
+.mail-tel-link:focus {
   color: var(--accent-color);
 }
-.navigatin-link:current () {
-  color: red;
-}
 
-.navigatin-link:visited .mail-link {
+.mail-tel-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--second-color-fonts);
 }
 
-.mail-link:hover,
-.mail-link:focus {
-  color: var(--accent-color);
-}
-
-.tel-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
-}
-
-.tel-link:hover,
-.tel-link:focus {
-  color: var(--accent-color);
-}
 /*----END HEADER------*/
 
 /*--------ABOUT--------*/
@@ -117,11 +108,10 @@ body {
 }
 
 .about-works {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--second-color-fonts);
 }
 /*--------END ABOUT--------*/
 
@@ -153,47 +143,47 @@ body {
 }
 
 .team-position {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--second-color-fonts);
 }
 /*-------END TEAM---------*/
 
 /*---------CONTACT---------*/
+.contact {
+  background-color: var(--color-background);
+}
+
 .logo-webstudio-contakt {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  /*color: var(--color-fonts-dark-background);*/
+  color: var(--color-fonts-dark-background);
 }
 
 .logo-web {
   font-family: 'Raleway', sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .contact-link {
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  /*color: #ffffff;*/
+  color: var(--color-fonts-dark-background);
 }
 
 /*---------END CONTACT---------*/
 
 /*--------GALERY------------*/
 .galery-head-bytton {
-  position: absolute;
   width: 145px;
   height: 38px;
   left: 712px;
@@ -208,11 +198,12 @@ body {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
 .galery-head-bytton:hover,
 .galery-head-bytton:focus {
-  color: #ffffff;
+  color: var(--color-fonts-dark-background);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -221,17 +212,16 @@ body {
 
 .galery-name {
   font-style: 400;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .galery-section {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--second-color-fonts);
 }
 /*--------END GALERY------------*/
