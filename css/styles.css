@@ -188,7 +188,7 @@ body {
   height: 38px;
   left: 712px;
   top: 174px;
-  border-color: #fff;
+  border-color: var(--color-fonts-dark-background);
   background: #f5f4fa;
   border-radius: 4px;
 
