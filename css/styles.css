@@ -5,6 +5,7 @@
   --color-link-visited: #900060;
   --first-color-fonts: #212121;
   --second-color-fonts: #757575;
+  --color-background-secton-team: #f5f4fa;
 }
 
 body {
@@ -46,7 +47,15 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
   letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  border-width: 0px;
+  border-color: var(--accent-color);
+  border-radius: 4px;
   color: var(--color-fonts-dark-background);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -80,6 +89,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--first-color-fonts);
 }
 .navigatin-link:hover,
 .mail-tel-link:hover,
@@ -126,6 +136,10 @@ body {
 /*-------END_WORK----*/
 
 /*-------TEAM---------*/
+.team {
+  background-color: var(--color-background-secton-team);
+}
+
 .team-heading {
   font-weight: 700;
   font-size: 36px;
@@ -180,6 +194,10 @@ body {
   color: var(--color-fonts-dark-background);
 }
 
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--accent-color);
+}
 /*---------END CONTACT---------*/
 
 /*--------GALERY------------*/
@@ -189,10 +207,10 @@ body {
   left: 712px;
   top: 174px;
   border-color: var(--color-fonts-dark-background);
-  background: #f5f4fa;
+  border-width: 0px;
+  background: var(--color-background-secton-team);
   border-radius: 4px;
-
-  font-family: Roboto;
+  font-family: 'Roboto' sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
