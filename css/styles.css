@@ -25,9 +25,6 @@ body {
   font-style: normal;
 }
 
-.navigatin-link:visited {
-  color: var(--color-link-visited);
-}
 /*-----COMPONENTS---------*/
 .hero-title {
   font-weight: 900;
@@ -40,7 +37,7 @@ body {
 }
 
 .hero-button {
-  font-family: 'Roboto' sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -91,11 +88,15 @@ body {
   letter-spacing: 0.02em;
   color: var(--first-color-fonts);
 }
+
 .navigatin-link:hover,
 .mail-tel-link:hover,
 .navigatin-link:focus,
 .mail-tel-link:focus {
   color: var(--accent-color);
+}
+.navigatin-link:active {
+  color: var(--color-link-visited);
 }
 
 .mail-tel-link {
@@ -210,7 +211,7 @@ body {
   border-width: 0px;
   background: var(--color-background-secton-team);
   border-radius: 4px;
-  font-family: 'Roboto' sans-serif;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
